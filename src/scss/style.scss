@@ -13,24 +13,19 @@ $btn-primary-color:#13181f;
     background-color: $btn-primary-color;
 }
 
-@mixin mt-20 {
-    margin-top:20px;
-}
+// @mixin marginBottom($bottom) {
+//     margin-bottom:$bottom;
+// }
 
-@mixin mb-10 {
-    margin-bottom:10px;
-}
-
-.intro {
-    @include mt-20;
+@mixin boxShadow($h-offset,$v-offset,$blur,$spread,$color){
+    box-shadow: $h-offset $v-offset $blur $spread $color;
 }
 
 .container {
     div {
         div {
             img {
-                box-shadow: 5px 10px 9px 0px #888888;
-                @include mb-10;
+                @include boxShadow(5px,10px,9px,0px,#888888);
             }
         }
     }
@@ -39,5 +34,4 @@ $btn-primary-color:#13181f;
 .footer {
     background-color: $footer-bg;
     padding:15px;
-    margin-top:10px;
 }
