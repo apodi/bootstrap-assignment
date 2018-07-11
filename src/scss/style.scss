@@ -6,18 +6,38 @@ $jumbotron-bg:#504848;
 $card-bg: rgb(80, 72, 72);
 $btn-primary-color:#13181f;
 
-.footer {
-    background-color: $footer-bg;
-    padding:15px;
-    margin-top:10px;
-}
-
-.intro {
-    margin-top:20px;
-}
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
 .btn-primary {
     background-color: $btn-primary-color;
+}
+
+@mixin mt-20 {
+    margin-top:20px;
+}
+
+@mixin mb-10 {
+    margin-bottom:10px;
+}
+
+.intro {
+    @include mt-20;
+}
+
+.container {
+    div {
+        div {
+            img {
+                box-shadow: 5px 10px 9px 0px #888888;
+                @include mb-10;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: $footer-bg;
+    padding:15px;
+    margin-top:10px;
 }
