@@ -35,3 +35,10 @@ $btn-primary-color:#13181f;
     background-color: $footer-bg;
     padding:15px;
 }
+ 
+@media only screen 
+and (max-width : 767px) {
+    .nav-item a {
+                       color: white !important
+                 }
+}
