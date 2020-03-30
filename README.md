@@ -3,10 +3,15 @@
 sass with bootstrap 
 accessbility 100%
 
-Step to run the application
-npm install
-npm gulp
+### Running locally 
 
+- Run the following commands
+
+```
+npm install
+
+npm run gulp
+```
 implemented 7 components are
 
 navs
